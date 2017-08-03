@@ -4,7 +4,6 @@ jdk:
 install: true
 
 script:
-  - sudo apt-get update && sudo apt-get install oracle-java8-installer
   - java -version
-  - mvn clean test org.pitest:pitest-maven:mutationCoverage
+  - mvn -B clean test org.pitest:pitest-maven:mutationCoverage
   
