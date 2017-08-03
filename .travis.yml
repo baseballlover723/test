@@ -4,6 +4,5 @@ jdk:
 install: true
 
 script:
-  - java -version
   - mvn -B clean test org.pitest:pitest-maven:mutationCoverage
   
